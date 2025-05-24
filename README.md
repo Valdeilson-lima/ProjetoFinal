@@ -4,11 +4,20 @@
 * Tela de Cadastro de Usuário
 ![Captura de tela de 2025-05-23 22-15-48](https://github.com/user-attachments/assets/ffe51ebb-3094-44f5-89e0-864afae73a4f)
 
-* Tela do CRUD
+* Tela do CRUD - Listagem
 ![Captura de tela de 2025-05-23 22-16-08](https://github.com/user-attachments/assets/ae01992e-75d8-4ed3-bc2a-b90f2f40ce91)
 
 * Modal de Cadastro
-![Captura de tela de 2025-05-23 22-16-08](https://github.com/user-attachments/assets/39e2fdd5-875c-49db-93f9-8fbe34b610dd)
+![Captura de tela de 2025-05-23 22-16-15](https://github.com/user-attachments/assets/d72ad10e-80f3-4129-bdb0-6d667d86f5cf)
+
+* Edição de Produo
+![Captura de tela de 2025-05-23 22-16-22](https://github.com/user-attachments/assets/3d5d9adf-7fc4-4139-ac65-bbcf2182d8e0)
+
+* Deleção de Produto
+![Captura de tela de 2025-05-23 22-16-46](https://github.com/user-attachments/assets/d8a4fcb4-6c6e-4fd1-b5a9-c9d3b051bf00)
+
+
+
 
 
 
