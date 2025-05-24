@@ -1,0 +1,151 @@
+/* Table General Styling */
+.records {
+    width: 100%;
+    user-select: none;
+    border-collapse: collapse; /* Ensures borders are collapsed for a cleaner look */
+    margin-top: 20px; /* Adds some space above the table */
+    box-shadow: 0 4px 15px var(--shadow-color); /* Subtle shadow for the whole table */
+    border-radius: 8px; /* Slightly rounded corners for the table container */
+    overflow: hidden; /* Ensures rounded corners apply to content */
+}
+
+/* Table Header Styling */
+.records th {
+    height: 45px; /* Slightly taller header for better touch targets */
+    background-color: var(--primary-color);
+    padding: 0 20px; /* Consistent horizontal padding */
+    text-align: center;
+    font-size: 1.05rem; /* Slightly larger font */
+    color: var(--text-light);
+    font-weight: 600; /* Bolder header text */
+    text-transform: uppercase; /* Uppercase for a professional look */
+    letter-spacing: 0.05em; /* A little letter spacing */
+}
+
+/* Table Data Cells Styling */
+.records td {
+    height: 60px; /* Taller rows for better readability and spacing */
+    padding: 12px 20px; /* Adjusted padding */
+    text-align: center;
+    border-bottom: 1px solid var(--border-color); /* Subtle bottom border for rows */
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+/* Last Column (Action Buttons) */
+.records th:last-child,
+.records td:last-child {
+    padding: 0;
+    min-width: 160px; /* Increased min-width for action buttons */
+    text-align: center;
+    display: flex; /* Use flexbox for button alignment */
+    align-items: center; /* Vertically center buttons */
+    justify-content: center; /* Horizontally center buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+/* Row Hover Effect */
+.records tbody tr:hover {
+    background-color: #e9f5ff; /* Lighter, more inviting hover color */
+    cursor: pointer; /* Indicates interactivity */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* More pronounced shadow on hover */
+    transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Remove hover effect from header row */
+.records thead tr:hover {
+    background-color: var(--primary-color); /* Maintain header background */
+    transform: none;
+    box-shadow: none;
+}
+
+---
+
+## Responsive Adjustments
+
+```css
+@media (max-width: 768px) {
+    .records th,
+    .records td {
+        padding: 10px 15px; /* Slightly less padding on tablets */
+    }
+
+    .records th:last-child,
+    .records td:last-child {
+        min-width: 120px;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .records {
+        width: 100%;
+        border-spacing: 0; /* Remove border-spacing for card layout */
+        display: block;
+        margin-top: 30px; /* Adjusted margin to fit main content */
+        box-shadow: none; /* No shadow on the main table container for mobile */
+        border-radius: 0; /* No border-radius on the main table container for mobile */
+    }
+
+    .records thead {
+        display: none; /* Hide table header on mobile */
+    }
+
+    .records tbody,
+    .records tr,
+    .records td {
+        display: block;
+        width: 100%;
+    }
+
+    .records tr {
+        background-color: var(--background-paper); /* Use paper background for cards */
+        border-radius: 10px; /* More pronounced rounded corners for cards */
+        box-shadow: 0 4px 15px var(--shadow-color); /* Deeper shadow for individual cards */
+        margin-bottom: 18px; /* More space between cards */
+        padding: 15px 0; /* Adjusted padding for cards */
+        transition: transform 0.2s ease-in-out; /* Smooth transition for mobile cards */
+    }
+
+    .records tr:hover {
+        transform: translateY(-3px); /* More noticeable lift on mobile card hover */
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow on mobile card hover */
+    }
+
+    .records td {
+        padding: 10px 20px; /* Consistent padding within mobile table cells */
+        border-bottom: 1px solid var(--border-color);
+        font-size: 1rem; /* Slightly larger font for mobile data */
+        text-align: left; /* Align text left for better readability on mobile */
+    }
+
+    .records td::before {
+        content: attr(data-label);
+        font-weight: 700; /* Bolder label */
+        display: block;
+        color: var(--primary-color); /* Use primary color for labels */
+        margin-bottom: 6px; /* More space below label */
+        font-size: 0.85rem; /* Slightly smaller label font */
+        text-transform: uppercase; /* Uppercase labels */
+        letter-spacing: 0.03em;
+    }
+
+    /* Action buttons on mobile */
+    .records td:last-child {
+        display: flex;
+        justify-content: space-evenly; /* Evenly distribute buttons */
+        gap: 15px; /* Increased space between buttons */
+        border: none;
+        padding: 15px 20px 0; /* Adjusted padding for action section */
+    }
+
+    .records td:last-child button {
+        flex: 1; /* Make buttons take equal width */
+        padding: 10px; /* Larger padding for better touch targets */
+        font-size: 0.95rem; /* Slightly larger button text */
+        border-radius: 6px; /* Slightly more rounded buttons */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for buttons */
+        transition: all 0.2s ease;
+    }
+}

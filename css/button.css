@@ -1,0 +1,101 @@
+/* General Button Styling */
+.button {
+    border: none; /* Use 'border: none;' instead of 'border-style: none;' for brevity */
+    height: 40px; /* Slightly increased height for better touch targets and visual balance */
+    padding: 0 20px; /* Adjusted padding for better text spacing */
+    background-color: #555; /* A neutral dark grey as default */
+    color: white;
+    font-weight: 600; /* Bolder font weight */
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px; /* Slightly more rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for all changes */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Subtle default shadow */
+    text-transform: capitalize; /* Capitalize button text for consistency */
+    display: inline-flex; /* Use flexbox for consistent centering of text */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Specific Button Colors - Aligning with main.css and modal.css */
+.button.blue {
+    background-color: var(--primary-color); /* From main.css: #4A90E2 */
+    box-shadow: 0 3px 8px rgba(74, 144, 226, 0.3); /* Blue specific shadow */
+}
+
+.button.green {
+    background-color: var(--accent-color); /* From main.css: #5cb85c */
+    box-shadow: 0 3px 8px rgba(92, 184, 92, 0.3); /* Green specific shadow */
+}
+
+.button.red {
+    background-color: var(--danger-color); /* From main.css: #d9534f */
+    box-shadow: 0 3px 8px rgba(217, 83, 79, 0.3); /* Red specific shadow */
+}
+
+/* Hover Effect for all buttons */
+.button:hover {
+    transform: translateY(-2px); /* Subtle lift effect */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25); /* More pronounced shadow on hover */
+}
+
+/* Specific Hover Effects (Optional, for more distinct feedback) */
+.button.blue:hover {
+    background-color: #3b7ad6; /* Slightly darker blue */
+    box-shadow: 0 5px 12px rgba(74, 144, 226, 0.45);
+}
+
+.button.green:hover {
+    background-color: #4CAF50; /* Slightly darker green */
+    box-shadow: 0 5px 12px rgba(92, 184, 92, 0.45);
+}
+
+.button.red:hover {
+    background-color: #c9302c; /* Slightly darker red */
+    box-shadow: 0 5px 12px rgba(217, 83, 79, 0.45);
+}
+
+---
+
+## Responsive Button (Mobile FAB)
+
+```css
+@media(max-width:480px){
+    /* Hide the regular 'Cadastrar Cliente' button that appears normally */
+    .button.mobile {
+        display: none; /* Hide the desktop-style button on mobile */
+    }
+
+    /* Floating Action Button (FAB) for mobile */
+    #cadastrarProduto { /* Targeting the specific button ID for the FAB */
+        color: white; /* Ensure text color is white */
+        font-size: 0; /* Hide original text */
+        width: 60px; /* Larger FAB size */
+        height: 60px;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 25px; /* Positioned from the bottom */
+        right: 25px; /* Positioned from the right */
+        z-index: 1000; /* Ensure it's above other content */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Prominent shadow */
+        background-color: var(--primary-color); /* Use primary color for the FAB */
+        display: flex; /* Use flexbox to center the plus sign */
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    #cadastrarProduto::before{
+        content: "+"; /* Plus sign content */
+        color: white; /* Plus sign color */
+        font-size: 2.5rem; /* Larger plus sign */
+        font-weight: 300; /* Lighter weight for the plus sign */
+        line-height: 1; /* Adjust line-height for perfect centering */
+    }
+
+    #cadastrarProduto:hover {
+        background-color: #3b7ad6; /* Darker primary color on hover */
+        transform: translateY(-3px); /* More noticeable lift on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+}
