@@ -2,73 +2,64 @@
 .records {
     width: 100%;
     user-select: none;
-    border-collapse: collapse; /* Ensures borders are collapsed for a cleaner look */
-    margin-top: 20px; /* Adds some space above the table */
-    box-shadow: 0 4px 15px var(--shadow-color); /* Subtle shadow for the whole table */
-    border-radius: 8px; /* Slightly rounded corners for the table container */
-    overflow: hidden; /* Ensures rounded corners apply to content */
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 /* Table Header Styling */
 .records th {
-    height: 45px; /* Slightly taller header for better touch targets */
+    height: 45px;
     background-color: var(--primary-color);
-    padding: 0 20px; /* Consistent horizontal padding */
+    padding: 0 20px;
     text-align: center;
-    font-size: 1.05rem; /* Slightly larger font */
+    font-size: 1.05rem;
     color: var(--text-light);
-    font-weight: 600; /* Bolder header text */
-    text-transform: uppercase; /* Uppercase for a professional look */
-    letter-spacing: 0.05em; /* A little letter spacing */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
-/* Table Data Cells Styling */
 .records td {
-    height: 60px; /* Taller rows for better readability and spacing */
-    padding: 12px 20px; /* Adjusted padding */
+    height: 60px;
+    padding: 12px 20px;
     text-align: center;
-    border-bottom: 1px solid var(--border-color); /* Subtle bottom border for rows */
+    border-bottom: 1px solid var(--border-color);
     font-size: 1rem;
     color: var(--text-dark);
 }
 
-/* Last Column (Action Buttons) */
 .records th:last-child,
 .records td:last-child {
     padding: 0;
-    min-width: 160px; /* Increased min-width for action buttons */
+    min-width: 160px;
     text-align: center;
-    display: flex; /* Use flexbox for button alignment */
-    align-items: center; /* Vertically center buttons */
-    justify-content: center; /* Horizontally center buttons */
-    gap: 10px; /* Space between buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-/* Row Hover Effect */
 .records tbody tr:hover {
-    background-color: #e9f5ff; /* Lighter, more inviting hover color */
-    cursor: pointer; /* Indicates interactivity */
-    transform: translateY(-2px); /* Subtle lift effect on hover */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* More pronounced shadow on hover */
-    transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+    background-color: #e9f5ff;
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease-in-out;
 }
 
-/* Remove hover effect from header row */
 .records thead tr:hover {
-    background-color: var(--primary-color); /* Maintain header background */
+    background-color: var(--primary-color);
     transform: none;
     box-shadow: none;
 }
 
----
-
-## Responsive Adjustments
-
-```css
 @media (max-width: 768px) {
     .records th,
     .records td {
-        padding: 10px 15px; /* Slightly less padding on tablets */
+        padding: 10px 15px;
     }
 
     .records th:last-child,
@@ -81,15 +72,15 @@
 @media (max-width: 480px) {
     .records {
         width: 100%;
-        border-spacing: 0; /* Remove border-spacing for card layout */
+        border-spacing: 0;
         display: block;
-        margin-top: 30px; /* Adjusted margin to fit main content */
-        box-shadow: none; /* No shadow on the main table container for mobile */
-        border-radius: 0; /* No border-radius on the main table container for mobile */
+        margin-top: 30px;
+        box-shadow: none;
+        border-radius: 0;
     }
 
     .records thead {
-        display: none; /* Hide table header on mobile */
+        display: none;
     }
 
     .records tbody,
@@ -100,52 +91,51 @@
     }
 
     .records tr {
-        background-color: var(--background-paper); /* Use paper background for cards */
-        border-radius: 10px; /* More pronounced rounded corners for cards */
-        box-shadow: 0 4px 15px var(--shadow-color); /* Deeper shadow for individual cards */
-        margin-bottom: 18px; /* More space between cards */
-        padding: 15px 0; /* Adjusted padding for cards */
-        transition: transform 0.2s ease-in-out; /* Smooth transition for mobile cards */
+        background-color: var(--background-paper);
+        border-radius: 10px;
+        box-shadow: 0 4px 15px var(--shadow-color);
+        margin-bottom: 18px;
+        padding: 15px 0;
+        transition: transform 0.2s ease-in-out;
     }
 
     .records tr:hover {
-        transform: translateY(-3px); /* More noticeable lift on mobile card hover */
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow on mobile card hover */
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     }
 
     .records td {
-        padding: 10px 20px; /* Consistent padding within mobile table cells */
+        padding: 10px 20px;
         border-bottom: 1px solid var(--border-color);
-        font-size: 1rem; /* Slightly larger font for mobile data */
-        text-align: left; /* Align text left for better readability on mobile */
+        font-size: 1rem;
+        text-align: left;
     }
 
     .records td::before {
         content: attr(data-label);
-        font-weight: 700; /* Bolder label */
+        font-weight: 700;
         display: block;
-        color: var(--primary-color); /* Use primary color for labels */
-        margin-bottom: 6px; /* More space below label */
-        font-size: 0.85rem; /* Slightly smaller label font */
-        text-transform: uppercase; /* Uppercase labels */
+        color: var(--primary-color);
+        margin-bottom: 6px;
+        font-size: 0.85rem;
+        text-transform: uppercase;
         letter-spacing: 0.03em;
     }
 
-    /* Action buttons on mobile */
     .records td:last-child {
         display: flex;
-        justify-content: space-evenly; /* Evenly distribute buttons */
-        gap: 15px; /* Increased space between buttons */
+        justify-content: space-evenly;
+        gap: 15px;
         border: none;
-        padding: 15px 20px 0; /* Adjusted padding for action section */
+        padding: 15px 20px 0;
     }
 
     .records td:last-child button {
-        flex: 1; /* Make buttons take equal width */
-        padding: 10px; /* Larger padding for better touch targets */
-        font-size: 0.95rem; /* Slightly larger button text */
-        border-radius: 6px; /* Slightly more rounded buttons */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for buttons */
+        flex: 1;
+        padding: 10px;
+        font-size: 0.95rem;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         transition: all 0.2s ease;
     }
 }
