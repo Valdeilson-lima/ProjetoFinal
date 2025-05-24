@@ -1,3 +1,33 @@
+* Tela de Login
+![Captura de tela de 2025-05-23 22-15-14](https://github.com/user-attachments/assets/34f1355d-05e4-4e65-8e92-4a0750ea8a7f)
+
+* Tela de Cadastro de Usuário
+![Captura de tela de 2025-05-23 22-15-48](https://github.com/user-attachments/assets/ffe51ebb-3094-44f5-89e0-864afae73a4f)
+
+* Tela do CRUD - Listagem
+![Captura de tela de 2025-05-23 22-16-08](https://github.com/user-attachments/assets/ae01992e-75d8-4ed3-bc2a-b90f2f40ce91)
+
+* Modal de Cadastro
+![Captura de tela de 2025-05-23 22-16-15](https://github.com/user-attachments/assets/d72ad10e-80f3-4129-bdb0-6d667d86f5cf)
+
+* Edição de Produo
+![Captura de tela de 2025-05-23 22-16-22](https://github.com/user-attachments/assets/3d5d9adf-7fc4-4139-ac65-bbcf2182d8e0)
+
+* Deleção de Produto
+![Captura de tela de 2025-05-23 22-16-46](https://github.com/user-attachments/assets/d8a4fcb4-6c6e-4fd1-b5a9-c9d3b051bf00)
+
+* Validação dos campos do modal de Cadastro
+![Captura de tela de 2025-05-23 22-21-50](https://github.com/user-attachments/assets/a619a420-3ccc-48dc-881a-0462af7f8b4f)
+
+
+
+
+
+
+
+
+
+
 # Sistema de Cadastro de Produtos
 
 Este projeto é um sistema web CRUD (Criar, Ler, Atualizar, Deletar) simples para gerenciar informações de produtos. Ele permite que os usuários registrem, visualizem, editem e excluam registros de produtos, e inclui um sistema básico de autenticação de usuário para login e cadastro.
