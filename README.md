@@ -19,6 +19,28 @@
 * Validação dos campos do modal de Cadastro
 ![Captura de tela de 2025-05-23 22-21-50](https://github.com/user-attachments/assets/a619a420-3ccc-48dc-881a-0462af7f8b4f)
 
+* Tela Mobile
+
+* Tela Login
+  
+![Captura de tela de 2025-05-23 23-46-02](https://github.com/user-attachments/assets/3bc7fb93-1598-4f1f-b2c6-73e7141428a0) 
+
+* Tela Cadastro
+
+![Captura de tela de 2025-05-23 23-46-08](https://github.com/user-attachments/assets/a2260ca8-be7b-449f-a455-27fa43f2efde)
+
+* Tela de Dashboard
+
+![Captura de tela de 2025-05-23 23-46-27](https://github.com/user-attachments/assets/bdf0dc13-5ec7-4ae1-a58b-9c2c9cb296e9)
+
+* Modal de Cadastro
+
+![Captura de tela de 2025-05-23 23-46-33](https://github.com/user-attachments/assets/9c90730a-16e3-43f4-851e-0079c2e150ce)
+
+
+
+
+
 
 
 
