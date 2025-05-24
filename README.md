@@ -90,7 +90,7 @@ Este projeto é um sistema web CRUD (Criar, Ler, Atualizar, Deletar) simples par
 
 ## Contexto do Projeto
 
-Este projeto foi desenvolvido como parte da **avaliação final da disciplina de Desenvolvimento Integrado**, demonstrando habilidades em desenvolvimento front-end e manipulação de dados persistentes utilizando tecnologias web padrões.
+Este projeto foi desenvolvido como parte da **avaliação final da disciplina de Projeto Integrado**, demonstrando habilidades em desenvolvimento front-end e manipulação de dados persistentes utilizando tecnologias web padrões.
 
 ---
 
