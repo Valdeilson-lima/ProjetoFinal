@@ -1,6 +1,18 @@
 * Tela de Login
 ![Captura de tela de 2025-05-23 22-15-14](https://github.com/user-attachments/assets/34f1355d-05e4-4e65-8e92-4a0750ea8a7f)
 
+* Tela de Cadastro de Usuário
+![Captura de tela de 2025-05-23 22-15-48](https://github.com/user-attachments/assets/ffe51ebb-3094-44f5-89e0-864afae73a4f)
+
+* Tela do CRUD
+![Captura de tela de 2025-05-23 22-16-08](https://github.com/user-attachments/assets/ae01992e-75d8-4ed3-bc2a-b90f2f40ce91)
+
+* Modal de Cadastro
+![Captura de tela de 2025-05-23 22-16-08](https://github.com/user-attachments/assets/39e2fdd5-875c-49db-93f9-8fbe34b610dd)
+
+
+
+
 
 
 # Sistema de Cadastro de Produtos
