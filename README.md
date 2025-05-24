@@ -23,11 +23,11 @@
 
 * Tela Login
   
-![Captura de tela de 2025-05-23 23-46-02](https://github.com/user-attachments/assets/3bc7fb93-1598-4f1f-b2c6-73e7141428a0) 
+![Captura de tela de 2025-05-23 23-46-02](https://github.com/user-attachments/assets/3bc7fb93-1598-4f1f-b2c6-73e7141428a0) ![Captura de tela de 2025-05-23 23-46-08](https://github.com/user-attachments/assets/a2260ca8-be7b-449f-a455-27fa43f2efde)
 
 * Tela Cadastro
 
-![Captura de tela de 2025-05-23 23-46-08](https://github.com/user-attachments/assets/a2260ca8-be7b-449f-a455-27fa43f2efde)
+
 
 * Tela de Dashboard
 
