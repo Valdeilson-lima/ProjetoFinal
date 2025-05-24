@@ -1,3 +1,8 @@
+* Tela de Login
+![Captura de tela de 2025-05-23 22-15-14](https://github.com/user-attachments/assets/34f1355d-05e4-4e65-8e92-4a0750ea8a7f)
+
+
+
 # Sistema de Cadastro de Produtos
 
 Este projeto é um sistema web CRUD (Criar, Ler, Atualizar, Deletar) simples para gerenciar informações de produtos. Ele permite que os usuários registrem, visualizem, editem e excluam registros de produtos, e inclui um sistema básico de autenticação de usuário para login e cadastro.
