@@ -16,6 +16,10 @@
 * Deleção de Produto
 ![Captura de tela de 2025-05-23 22-16-46](https://github.com/user-attachments/assets/d8a4fcb4-6c6e-4fd1-b5a9-c9d3b051bf00)
 
+* Validação dos campos do modal de Cadastro
+![Captura de tela de 2025-05-23 22-21-50](https://github.com/user-attachments/assets/a619a420-3ccc-48dc-881a-0462af7f8b4f)
+
+
 
 
 
